@@ -146,12 +146,36 @@ jQuery(function () {
 
         </p>
       </div>
-      <div class="block last"><img src="images/demo/46x46.gif" width="46" height="46" alt="" /><strong>Lorum ipsum dolor</strong>
-        <p>For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>. Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum.</p>
+      <div class="block last"><img src="images/demo/46x46.gif" width="46" height="46" alt="" /><strong>Uygulama 3</strong>
+        <p>
+          <?php
+ date_default_timezone_set('Europe/Istanbul');
+echo date('d.m.Y H:i:s',time())."<br>";
+echo 'Saat: ' . date('H.i')."<br>";
+echo date('d F y l')."<br>";
+?>
+ </p>
       </div>
       <div class="spacer">&nbsp;</div>
-      <div class="block"><img src="images/demo/46x46.gif" width="46" height="46" alt="" /><strong>Lorum ipsum dolor</strong>
-        <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aenean nunc aenean quis nam nis dui.</p>
+      <div class="block"><img src="images/demo/46x46.gif" width="46" height="46" alt="" /><strong>Uygulama 4</strong>
+        <p>
+          <?php
+ date_default_timezone_set('Europe/Istanbul');
+ $dogum_tarihi = mktime(0, 0, 0, 3, 31, 2008);
+ $suan=time();
+ $gecen_zaman=$suan-$dogum_tarihi;
+ echo "Bugün=".date('d.m.Y H:i:s',$suan)."<br>";
+ echo "Doğum günü=".date('d.m.Y H:i:s',$dogum_tarihi)."<br><hr>";
+ echo "Geçen Yıl=".round($gecen_zaman/(60*60*24*365))." yıl<br>";
+ echo "Geçen Ay=".round($gecen_zaman/(60*60*24*30))." ay<br>";
+ echo "Geçen Hafta=".round($gecen_zaman/(60*60*24*7))." hafta<br>";
+ echo "Geçen Gün=".round($gecen_zaman/(60*60*24))." gün<br>";
+ echo "Geçen Saat=".round($gecen_zaman/(60*60))." sa<br>";
+ echo "Geçen Dakika=".round(($gecen_zaman/60))." dk<br>";
+ echo "Geçen Saniye=".$gecen_zaman." sn<br>";
+?>
+   
+      </p>
       </div>
       <div class="block"><img src="images/demo/46x46.gif" width="46" height="46" alt="" /><strong>Lorum ipsum dolor</strong>
         <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aenean nunc aenean quis nam nis dui.</p>
